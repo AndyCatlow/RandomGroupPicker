@@ -8,5 +8,23 @@
     <script src="script.js" defer></script>
     <title>Group Picker</title>
   </head>
-  <body></body>
+  <body>
+    <ul id="list"></ul>
+
+    <form id="new-class-form">
+      <label for="name">Add a name</label>
+      <input type="text" name="name" id="name" />
+      <button type="submit">add</button>
+    </form>
+
+    <template id="list-item-template">
+      <li class="list-item">
+        <label class="list-item-label">
+          <input type="checkbox" data-list-item-checkbox />
+          <span data-list-item-text></span>
+        </label>
+        <button data-button-delete>Delete</button>
+      </li>
+    </template>
+  </body>
 </html>
